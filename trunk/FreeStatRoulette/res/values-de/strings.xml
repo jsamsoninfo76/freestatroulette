@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<string name="app_name">FreeStatRoulette</string>
+    <string name="error_impossible">Unmöglich</string>
+    <string name="confirmation">Können Sie bestätigen, die neben der Nummer:</string>
+    <string name="confirmer">Bestätigen</string>
+    <string name="oui">Ja</string>
+	<string name="non">Nicht</string>
+	
+	<string name="annuler">kündigen</string>
+	<string name="quitter">Verlassen</string>
+	<string name="partager">Anteil</string>
+	
+	<string name="rouge">Rot :</string>
+	<string name="noir">Schwarz :</string>
+	<string name="pair">Even :</string>
+	<string name="impair">Odd :</string>
+	<string name="tiers">Dritte :</string>
+	<string name="voisinzero">Nahe bei Null :</string>
+	<string name="orphelin">Waise :</string>
+</resources>
