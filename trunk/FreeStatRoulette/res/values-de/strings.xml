@@ -6,10 +6,13 @@
     <string name="confirmer">Bestätigen</string>
     <string name="oui">Ja</string>
 	<string name="non">Nicht</string>
+	<string name="envoyer">Send</string>
 	
 	<string name="annuler">kündigen</string>
 	<string name="quitter">Verlassen</string>
 	<string name="partager">Anteil</string>
+	<string name="com">Kommentar</string>
+	<string name="com_msg">Schreiben Sie einen Kommentar für den Entwickler</string>
 	
 	<string name="rouge">Rot :</string>
 	<string name="noir">Schwarz :</string>

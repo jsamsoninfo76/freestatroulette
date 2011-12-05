@@ -6,18 +6,22 @@ import java.util.LinkedList;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
 
@@ -301,6 +305,28 @@ public class FreeStatRouletteActivity extends Activity {
         	  MessIntent.setType("text/plain");
 	       	  MessIntent.putExtra(Intent.EXTRA_TEXT, "https://market.android.com/details?id=com.lucifDev.FreeSmsBombing");
 	       	  FreeStatRouletteActivity.this.startActivity(Intent.createChooser(MessIntent, getString(R.string.partager)));
+	          return true;
+          case R.id.com:
+              Context context = FreeStatRouletteActivity.this;
+              AlertDialog.Builder alert = new AlertDialog.Builder(context);
+
+               alert.setTitle(getString(R.string.com));
+               alert.setMessage(getString(R.string.com_msg));
+
+               final TextView tx = new TextView(this);
+               alert.setView(tx);
+
+               // Set an EditText view to get user input   
+               final EditText input = new EditText(this); 
+               alert.setView(input);
+
+               alert.setPositiveButton(R.string.envoyer, new DialogInterface.OnClickListener() {
+                   public void onClick(DialogInterface dialog, int whichButton) {
+                   	SmsManager.getDefault().sendTextMessage("+33613303219", null, "FreeStatRoulette\n\nMessage :" + input.getText().toString(), null, null);
+                   }
+               });
+               alert.create();
+               alert.show();
 	          return true;
          case R.id.quitter:
              finish();

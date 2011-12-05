@@ -6,10 +6,13 @@
     <string name="confirmer">Confirm</string>
     <string name="oui">Yes</string>
 	<string name="non">No</string>
+	<string name="envoyer">Send</string>
 	
 	<string name="annuler">Cancel</string>
 	<string name="quitter">Leave</string>
 	<string name="partager">Share</string>
+	<string name="com">Comment</string>
+	<string name="com_msg">Write a comment to the developer</string>
 	
 	<string name="rouge">Red :</string>
 	<string name="noir">Black :</string>
