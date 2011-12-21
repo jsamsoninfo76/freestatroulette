@@ -26,10 +26,10 @@ import com.google.ads.AdRequest;
 import com.google.ads.AdView;
 
 public class FreeStatRouletteActivity extends Activity {
+	
 	/* ATTRIBUTS GLOBAUX */
 	private HashMap<Integer, Integer> tabCoul;
 	private TextView rouge,noir,pair,impair,col1,col2,col3,passe,manque,tiers,orphelin,voisinZero;
-
 	private LinkedList<Integer> tabNum;
 	private TextView affichage;
 	private final int tailleTableau = 10;
